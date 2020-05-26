@@ -1,0 +1,1954 @@
+html{
+	box-sizing: border-box;
+}
+*, *:after, *:before{
+	box-sizing: inherit;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+	max-width: 1370px;
+	font-family: 'Lato', sans-serif;
+	background: #f2f3f3;
+
+}
+
+header{
+	background: url("../img/junglebook.jpg") no-repeat center top / cover;
+	min-height: 600px;
+}
+
+
+li{
+
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+
+.container{
+	width: 100%;
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	box-sizing:border-box;
+
+}
+
+
+
+.logo{
+	display: block;
+	width: 38px;
+	padding-top: 40px;
+}
+
+
+
+
+
+
+
+#burger_menu{
+	position: fixed;
+	width: 250px;
+	height: 100%;
+	background: #131414;
+	border-right: 4px solid #E0E5EA;
+	right: -250px;
+	-moz-transition: all 300ms;
+	-webkit-transition: all 300ms;
+	transition: all 300ms;
+
+}
+
+
+#burger_menu.active{
+	right: 0px;
+	top: 0px;
+}
+
+
+
+#burger_menu ul li:first-child{
+	text-align: center;
+	color: white;
+	font-size: 1.95em;
+	list-style: none;
+	padding: 25px 10px 10px 10px;
+}
+
+
+#burger_menu ul li:not(:first-child){
+	width: 90px;
+	margin-left: 10%;
+	color: white;
+	font-size: 1.1em;
+	list-style: none;
+	padding: 15px 10px;
+}
+
+#burger_menu ul li a{
+	color: #39676894;
+	text-decoration: none;
+	transition: 300ms;
+}
+
+#burger_menu ul li a:hover{
+	color: #00D5D3;
+	transition: 300ms;
+}
+
+.toggle_btn{
+	position: absolute;
+	right: 270px;
+	top: 20px;
+	background: #E0E5EA;
+	padding: 20px;
+	border-radius: 32px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.toggle_btn:hover{background: #556270;}
+
+.toggle_btn span:hover{background: #fafafa;}
+
+
+.toggle_btn span{
+	display: block;
+	width: 25px;
+	height: 4px;
+	background-color: #666;
+	margin: 4px 0;
+}
+
+
+#burger_menu{
+	display: none;
+}
+
+
+.top_ul{
+	display: flex;
+	position: absolute;
+	right: 5%;
+	top: 4%;
+
+}
+
+
+.top_ul li{margin-left: 20px; }
+
+
+
+
+.btn{
+	padding-right: 41px;
+	padding-left: 41px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border: 2px solid #0aaee4;
+	border-radius: 4px;
+	transition: 0.7s;
+	margin-left: 20px;
+}
+
+.btn:hover{
+	background: #0aaee4;
+	border-radius: 4px;
+}
+
+.navigation{
+	margin-top: 340px;
+	color: #ffffff;
+}
+
+
+.navigation ul{
+	box-sizing: inherit;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	padding: 0;
+	margin-bottom: 6px;
+
+}
+
+.navigation h2{
+	font-size: 60px;
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 0;
+}
+.navigation li{
+	box-sizing: inherit;
+	margin-right: 20px;
+	margin-top: 0;
+	margin-left: 0;
+	font-size: 20px;
+	font-weight: 400;
+	transition: 0.8s;
+
+}
+
+.navigation li a{transition: 0.7s;}
+
+.navigation li a:hover{color: red;}
+
+
+.stars{
+	display: flex;
+	margin-top: 0px;
+	justify-content: space-between;
+}
+
+.stars img{
+	height: 33px;
+	margin-right: 20px;
+}
+
+.stars h5{
+	position: absolute;
+	left: 18%;
+	top: 84%;
+	padding: 8px;
+	border: 2px solid #0aaee4;
+	border-radius: 7px;
+}
+
+
+.complide_buttons {
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.complide_buttons .btn_watch_now{
+	padding-right: 35px;
+	padding-left: 35px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 2px solid #0aaee4;
+	border-radius: 4px;
+	transition: 0.7s;
+	margin-right: 42px;
+}
+
+
+.complide_buttons .view_into{
+	padding-right: 35px;
+	padding-left: 35px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 2px solid #ffffff;
+	border-radius: 4px;
+	transition: 0.7s;
+	margin-right: 20px;
+}
+
+
+
+.view_into:hover{
+	background: #ffffff;
+	color: #000
+}
+
+
+.btn_watch_now:hover{
+	background: #0aaee4;
+	border-radius: 4px;
+}
+
+.complide_buttons .favorites{
+	transition: 0.7s;
+}
+
+.complide_buttons .favorites:hover{
+	color: #9d163c;
+}
+
+.sign_in_button{
+	font-size: 18px;
+	transition: 0.7s;
+	padding-right: 41px;
+	padding-left: 41px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.sign_in_button:hover{
+	color: #000;
+	border: 1px solid #ffffff;
+	background: #ffffff;
+	border-radius: 4px;
+}
+
+.search-icon{
+	width: 32px;
+	height: 32px;
+	transition: 0.5;
+}
+
+
+.search-icon:hover{
+	width:  40px;
+	height: 60px;
+}
+
+
+
+.trending{margin-top: 10px;}
+
+
+section .trending_ul{
+	display: flex;
+	border-bottom: 1px;
+	padding-left: 0px;
+}
+
+section .trending_ul li{
+	padding: 10px;
+	margin-right: 10px;
+
+}
+
+
+section .trending_ul li:first-child{
+	color: #129ac7;
+	border-bottom: 3px solid #0aaee4;
+}
+
+section .trending_ul li a{
+	font-family: 'Lato' sans-serif;
+	color: #0aaee4;
+	transition: 0.6s;
+}
+
+
+
+section .trending_ul li a:hover{
+	font-family: 'Lato' sans-serif;
+	color: #006385;
+}
+
+
+section .trending_ul li{
+	padding: 10px;
+	margin-right: 10px;
+
+}
+
+
+section .trending_ul li:first-child{
+	color: #129ac7;
+	border-bottom: 3px solid #0aaee4;
+}
+
+
+.list_movies{
+	box-sizing: inherit;
+}
+
+.movies{
+	box-sizing: inherit;
+	display: grid;
+	grid-template-columns: 320px 320px 320px 320px;
+	grid-column-gap: 20px;
+}
+
+.card{
+	width: 320px;
+	height: 400px;
+	background: #ffffff;
+}
+
+.movie{
+	margin-top: 10px;
+	margin-bottom: 75px;
+}
+
+.movie img{
+	width: 320px;
+	height: 300px;
+	box-sizing: inherit;
+	border-radius: 4px;
+}
+
+.movie p{
+	margin: 0;
+	margin-left: 20px;
+}
+
+
+.movie .catigories_movie{
+	color: #47c3f0;
+	margin-top: 5px;
+}
+
+
+.movie .movie_title{
+	margin-top: 10px;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	color: #242b2d;
+
+}
+
+
+.subscribe{
+	box-sizing: border-box;
+	width: 100%;
+	min-height: 400px;
+	background: url("../img/Footer-bg-copy.jpg")center;
+	margin-bottom: 40px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+
+.reseiv_information p{
+	font-size: 36px;
+	color: #ffffff;
+	/*letter-spacing: 20px;*/
+	font-weight: 400;
+}
+
+.reseiv_information a{
+	text-transform: uppercase;
+	border: 2px solid #3bb4e0;
+	background: #3bb4e0;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-right: 30px;
+	padding-left: 30px;
+	border-radius: 5px;
+	transition: 0.6s;
+}
+
+.reseiv_information a:hover{
+	background: #04698E;
+	border: 2px solid #04698E;
+	color: #D5D9DB;
+}
+
+
+.loading{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 112px;
+	padding-bottom: 90px;
+	flex-direction: column;
+}
+
+.loading p{
+	color: #c5c7c7;
+	font-size: 16px;
+	letter-spacing: 12px;
+	padding-left: 20px;
+}
+
+
+footer{
+	border-top: 1px solid #cacbcc;
+}
+
+footer .wrap{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 70px;
+	padding-bottom: 130px;
+}
+
+footer .wrap ul{
+	display: flex;
+}
+footer .wrap ul li{
+	margin: 0;
+	margin-right: 10px;
+	
+}
+
+footer .wrap ul li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #cacbcc;
+	transition: 0.5s;
+}
+
+footer .wrap ul li a:hover{
+	color: #6B6B6B;
+}
+
+
+
+footer .social_networks i{
+	font-size: 20px;
+	margin-right: 10px;
+	transition: 0.5s;
+}
+
+footer .social_networks i:first-child{
+	margin-left: 120px;
+}
+
+footer .social_networks i:hover{
+	color: red;
+}
+
+
+
+footer .note{
+	text-transform: uppercase;
+	text-align: center;
+	color: #989898;
+	font-size: 15px;
+}
+
+.main_button{
+	display: none
+}
+
+
+
+@media(max-width: 768px){
+	header{
+		background: url("../img/junglebook.jpg") no-repeat center top / cover;
+		height: 400px;
+	}
+	
+	header .navigation{
+		/*margin-top: 235px;*/
+		height: 200px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		padding-bottom: 20px;
+	}
+	
+	header .logo{
+		display: block;
+		width: 18px;
+		padding-top: 20px;
+	}
+	.navigation h2{
+		font-size:43px;
+	}
+
+	.navigation ul{
+		margin: 0;
+	}
+
+	.navigation li{
+		font-size: 10px;
+	}
+
+	.navigation li a:first-child{
+		margin-left: 7px;
+	}
+	/*
+	.reviwers .stars{
+		margin-left: 6px;
+	}
+
+	.reviwers .stars img{
+		height: 20px;
+		margin-right: 20px;
+		margin-top: 2px;
+
+	}*/
+
+	.reviwers .stars h5{
+		display: none;
+	}
+
+
+
+	.container{
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+		box-sizing: border-box;
+	}
+
+	
+	#burger_menu{
+		display: block;
+		position: fixed;
+		width: 200px;
+		height: 100%;
+		background: #131414;
+		border-right: 4px solid #E0E5EA;
+		right: -200px;
+		top: 1%;
+		-moz-transition: all 300ms;
+		-webkit-transition: all 300ms;
+		transition: all 300ms;
+
+    }
+
+
+	#burger_menu ul li:first-child{
+		text-align: center;
+		color: white;
+		font-size: 1.95em;
+		list-style: none;
+		padding: 15px 5px 5px 5px;
+	}
+
+
+	#burger_menu ul li:not(:first-child){
+		width: 90px;
+		margin-left: 10%;
+		color: white;
+		font-size: 1.0em;
+		list-style: none;
+		padding: 10px 10px;
+	}
+
+	#burger_menu ul li a{
+		color: #39676894;
+		text-decoration: none;
+	}
+
+	.toggle_btn{
+		position: absolute;
+		right: 230px;
+		top: 10px;
+		background: #E0E5EA;
+		padding: 15px;
+		border-radius: 28px;
+		cursor: pointer;
+		transition: 0.5s;
+	}
+
+	.toggle_btn span{
+		display: block;
+		width: 25px;
+		height: 4px;
+		background-color: #666;
+		margin: 4px 0;
+	}
+
+
+
+	
+
+	.top_ul{
+		display: none;
+	}
+	
+	header img{
+		margin-top: 10px;
+
+	}
+
+
+
+	section .trending_ul li{
+		padding: 4px;
+		margin-right: 10px;
+		font-size: 13px;
+	}
+	section .trending_ul li:first-child{
+		color: #129ac7;
+		border-bottom: 2px solid #0aaee4;
+	}		
+
+
+
+		
+	.movies{
+		box-sizing: inherit;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 0px;
+	}
+
+
+	.card{
+		width: 224px;
+		height: 300px;
+		margin-bottom: 20px;
+		background: #ffffff;
+	}
+	
+	.movie img{
+		width: 224px;
+		height: 220px;
+		
+	}
+	
+	.movie .movie_title{
+		margin-left: 0px;
+		padding-left: 0px;
+	}
+
+
+	.movie .movie_title,
+	.catigories_movie
+	{
+		font-size: 12px;
+	}
+
+	.movie p {
+		margin-left: 0;
+	}
+	
+	.last_movie{
+		display: none;
+	}
+
+
+	.subscribe{
+		width: 100%;
+		min-height: 230px;
+	}
+
+
+	.reseiv_information p{
+		font-size: 20px;
+		color: #ffffff;
+		font-weight: 400;
+	}
+
+
+	.reseiv_information a{
+		font-size: 14px;
+		letter-spacing: 1px;
+	}
+
+
+	footer{
+		border-top: 1px solid #cacbcc;
+	}
+
+	footer .wrap{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-top: 70px;
+		padding-bottom: 30px;
+	}
+
+	footer .wrap ul{
+		padding: 0;
+	}
+	footer .social_networks i{
+		font-size: 17px;
+		margin-right: 5px;
+	}
+
+	footer .wrap ul li a{
+		font-size: 13px;
+	}
+	
+	footer .note{
+		font-size: 10px;
+		padding-top: 20px;
+	}	
+
+
+}
+
+
+
+@media (max-width: 414px){
+	
+	header{
+		background: url("../img/junglebook.jpg") no-repeat center top / cover;
+		height: 400px;
+	}
+	
+	header .navigation{
+		margin-top: 235px;
+		height: 200px;
+	}
+	
+
+	.container{
+		width: 413px;
+		padding-left: 10px;
+		padding-right: 10px;
+		box-sizing: border-box;
+	}
+
+	.top_ul{
+		display: none;
+	}
+	.spans{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		position: absolute;
+		right: 5%;
+		top: 7%;
+	}
+	.navigation .name_sliders{
+		font-size: 25px;
+
+	}
+
+	.navigation ul{
+		margin: 3px;
+	}
+
+	.navigation li{
+		font-size: 9px;
+		margin-right: 4px;
+	}
+
+	.reviwers img{
+		width: 13px;
+		height: 13px;
+	}
+	.reviwers .stars h5{
+		display: none;
+	}
+	.top_ul .search_icon{
+		display: none;
+	}
+	.complide_buttons{
+		display: none;
+
+	}
+	.navigation{
+		margin-top: 430px;
+	}
+
+	.reviwers .stars h5 {
+		display: flex;
+		margin-top: 20px;
+		/*position: absolute;
+		top: 77%;
+		right: 62%;*/
+		font-size: 5px;
+		padding: 2px;
+		border: 1px solid;
+		border-radius: 3px;
+	}
+	
+	section .trending_ul li{
+		padding: 4px;
+		margin-right: 5px;
+		font-size: 10px;
+	}
+	section .trending_ul li:first-child{
+		color: #129ac7;
+		border-bottom: 2px solid #0aaee4;
+	}		
+
+
+
+	.movies{
+		box-sizing: inherit;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 5px;
+	}
+
+	.card{
+		width: 100px;
+		height: 200px;
+		background: #ffffff;
+	}
+	
+	.movie img{
+		width: 100px;
+		height: 100px;
+		
+	}
+	.movie .movie_title,
+	.catigories_movie
+	{
+		font-size: 10px;
+	}
+	
+	.last_movie{
+		display: none;
+	}
+
+
+	.subscribe{
+		box-sizing: border-box;
+		width: 100%;
+		height: 200px;
+		background: url("../img/Footer-bg-copy.jpg") center ;
+		margin-bottom: 30px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+	}
+
+
+	.reseiv_information p{
+		font-size: 16px;
+		color: #ffffff;
+		/*letter-spacing: 20px;*/
+		font-weight: 400;
+	}
+
+	.reseiv_information a{
+		text-transform: uppercase;
+		border: 2px solid #3bb4e0;
+		background: #3bb4e0;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		padding-right: 20px;
+		padding-left: 20px;
+		border-radius: 3px;
+		transition: 0.6s;
+	}
+
+
+	.loading{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-top: 90px;
+		padding-bottom: 70px;
+		flex-direction: column;
+	}
+
+	.loading p{
+		color: #c5c7c7;
+		font-size: 10px;
+		letter-spacing: 10px;
+		padding-left: 10px;
+	}
+
+	footer{
+		border-top: 1px solid #cacbcc;
+	}
+
+	footer .wrap{
+		display: block;
+		padding-top: 70px;
+		padding-bottom: 100px;
+		padding-left: 50px;
+	}
+	
+	footer .footer_loga{
+		padding-left: 55px;
+	}
+
+	footer .wrap ul{
+		display: flex;
+	}
+	footer .wrap ul li{
+		margin: 0;
+		margin-right: 10px;
+		
+	}
+
+	footer .wrap ul li a{
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 10px;
+		color: #cacbcc;
+		transition: 0.5s;
+	}
+
+	footer .wrap ul li a:hover{
+		color: #6B6B6B;
+	}
+
+	footer .social_networks{
+		display: flex;
+		justify-content: flex-start;
+		margin-top: 10px;
+	}
+
+	footer .social_networks i{
+		font-size: 15px;
+		margin-right: 20px;
+		transition: 0.5s;
+	}
+
+	footer .social_networks i:first-child{
+		margin-left: 40px;
+	}
+
+	footer .social_networks i:hover{
+		color: red;
+	}
+
+	footer .note{
+		text-transform: uppercase;
+		text-align: center;
+		color: #989898;
+		font-size: 10px;
+	}
+
+
+
+@media (max-width: 376px){
+	
+	header{
+		background: url("../img/junglebook.jpg") no-repeat center top / cover;
+		height: 400px;
+	}
+	
+	header .navigation{
+		margin-top: 235px;
+		height: 200px;
+	}
+	
+
+	.container{
+		width: 376px;
+		padding-left: 10px;
+		padding-right: 10px;
+		box-sizing: border-box;
+	}
+
+	.top_ul{
+		display: none;
+	}
+	
+	
+
+
+	#burger_menu{
+		display: block;
+		position: fixed;
+		width: 200px;
+		height: 100%;
+		background: #131414;
+		border-right: 4px solid #E0E5EA;
+		right: -200px;
+		top: 1%;
+		-moz-transition: all 300ms;
+		-webkit-transition: all 300ms;
+		transition: all 300ms;
+
+    }
+
+
+	#burger_menu ul li:first-child{
+		text-align: center;
+		color: white;
+		font-size: 1.95em;
+		list-style: none;
+		padding: 15px 5px 5px 5px;
+	}
+
+
+	#burger_menu ul li:not(:first-child){
+		width: 90px;
+		margin-left: 10%;
+		color: white;
+		font-size: 1.0em;
+		list-style: none;
+		padding: 10px 10px;
+	}
+
+	#burger_menu ul li a{
+		color: #39676894;
+		text-decoration: none;
+	}
+
+	.toggle_btn{
+		position: absolute;
+		right: 210px;
+		top: 15px;
+		background: #E0E5EA;
+		padding: 12px;
+		border-radius: 25px;
+		cursor: pointer;
+		transition: 0.5s;
+	}
+
+	.toggle_btn span{
+		display: block;
+		width: 25px;
+		height: 4px;
+		background-color: #666;
+		margin: 4px 0;
+	}
+
+
+
+
+	.navigation .name_sliders{
+		font-size: 25px;
+
+	}
+
+	.navigation ul{
+		margin: 3px;
+	}
+
+	.navigation li{
+		font-size: 9px;
+		margin-right: 4px;
+	}
+
+	.reviwers img{
+		width: 13px;
+		height: 13px;
+	}
+	.reviwers .stars h5{
+		position: absolute;
+		top: 68%;
+		right: 60%;
+		font-size: 5px;
+		padding: 5px;
+		border: 0.5;
+		border-radius: 3px;
+	}
+	.top_ul .search_icon{
+		display: none;
+	}
+	.complide_buttons{
+		display: none;
+
+	}
+	.navigation{
+		margin-top: 430px;
+	}
+
+	.reviwers .stars h5 {
+		display: flex;
+		margin-top: 20px;
+		/*position: absolute;
+		top: 77%;
+		right: 62%;*/
+		font-size: 5px;
+		padding: 2px;
+		border: 1px solid;
+		border-radius: 3px;
+	}
+	
+	section .trending_ul li{
+		padding: 4px;
+		margin-right: 5px;
+		font-size: 10px;
+	}
+	section .trending_ul li:first-child{
+		color: #129ac7;
+		border-bottom: 2px solid #0aaee4;
+	}		
+
+
+
+	.movies{
+		box-sizing: inherit;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 5px;
+	}
+
+	.card{
+		width: 100px;
+		height: 200px;
+		background: #ffffff;
+	}
+	
+	.movie img{
+		width: 100px;
+		height: 100px;
+		
+	}
+	.movie .movie_title,
+	.catigories_movie
+	{
+		font-size: 10px;
+	}
+	
+	.last_movie{
+		display: none;
+	}
+
+
+	.subscribe{
+		box-sizing: border-box;
+		width: 100%;
+		height: 200px;
+		background: url("../img/Footer-bg-copy.jpg") center ;
+		margin-bottom: 30px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+	}
+
+
+	.reseiv_information p{
+		font-size: 16px;
+		color: #ffffff;
+		/*letter-spacing: 20px;*/
+		font-weight: 400;
+	}
+
+	.reseiv_information a{
+		text-transform: uppercase;
+		border: 2px solid #3bb4e0;
+		background: #3bb4e0;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		padding-right: 20px;
+		padding-left: 20px;
+		border-radius: 3px;
+		transition: 0.6s;
+	}
+
+
+	.loading{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-top: 90px;
+		padding-bottom: 70px;
+		flex-direction: column;
+	}
+
+	.loading p{
+		color: #c5c7c7;
+		font-size: 10px;
+		letter-spacing: 10px;
+		padding-left: 10px;
+	}
+
+	footer{
+		border-top: 1px solid #cacbcc;
+	}
+
+	footer .wrap{
+		display: block;
+		padding-top: 70px;
+		padding-bottom: 100px;
+		padding-left: 50px;
+	}
+	
+	footer .footer_loga{
+		padding-left: 55px;
+	}
+
+	footer .wrap ul{
+		display: flex;
+	}
+	footer .wrap ul li{
+		margin: 0;
+		margin-right: 10px;
+		
+	}
+
+	footer .wrap ul li a{
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 10px;
+		color: #cacbcc;
+		transition: 0.5s;
+	}
+
+	footer .wrap ul li a:hover{
+		color: #6B6B6B;
+	}
+
+	footer .social_networks{
+		display: flex;
+		justify-content: flex-start;
+		margin-top: 10px;
+	}
+
+	footer .social_networks i{
+		font-size: 15px;
+		margin-right: 20px;
+		transition: 0.5s;
+	}
+
+	footer .social_networks i:first-child{
+		margin-left: 40px;
+	}
+
+	footer .social_networks i:hover{
+		color: red;
+	}
+
+	footer .note{
+		text-transform: uppercase;
+		text-align: center;
+		color: #989898;
+		font-size: 10px;
+	}
+
+
+@media (max-width: 350px){
+	
+	header{
+		background: url("../img/junglebook.jpg") no-repeat center top / cover;
+		height: 400px;
+	}
+	
+	header .navigation{
+		margin-top: 235px;
+		height: 200px;
+	}
+	
+	header .logo{
+		display: block;
+		width: 18px;
+		padding-top: 20px;
+	}
+
+
+	.container{
+		width: 350px;
+		padding-left: 10px;
+		padding-right: 10px;
+		box-sizing: border-box;
+	}
+
+	.top_ul{
+		display: none;
+	}
+
+
+	.spans{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		position: absolute;
+		right: 5%;
+		top: 4%;
+	}
+	
+
+	section .trending_ul li{
+		padding: 4px;
+		margin-right: 6px;
+		font-size: 9px;
+	}
+	section .trending_ul li:first-child{
+		color: #129ac7;
+		border-bottom: 2px solid #0aaee4;
+	}		
+
+	.card{
+		width: 100px;
+		height: 180px;
+		margin-bottom: 10px;
+		background: #ffffff;
+	}
+	
+	.movie img{
+		width: 100px;
+		height: 100px;
+		
+	}
+	
+	.movie .movie_title{
+		margin-left: 0px;
+		padding-left: 0px;
+	}
+
+
+	.movie .movie_title,
+	.catigories_movie
+	{
+		font-size: 7px;
+	}
+
+	.movie p {
+		margin-left: 0;
+	}
+	
+	.last_movie{
+		display: none;
+	}
+
+
+	.subscribe{
+		box-sizing: border-box;
+		width: 100%;
+		height: 200px;
+		background: url("../img/Footer-bg-copy.jpg") center ;
+		margin-bottom: 30px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+	}
+
+
+	.reseiv_information p{
+		font-size: 15px;
+		color: #ffffff;
+		/*letter-spacing: 20px;*/
+		font-weight: 400;
+	}
+
+	.reseiv_information a{
+		text-transform: uppercase;
+		border: 2px solid #3bb4e0;
+		background: #3bb4e0;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-right: 10px;
+		padding-left: 10px;
+		border-radius: 3px;
+		transition: 0.6s;
+	}
+
+}
+
+
+
+@media (max-width: 320px){
+	
+	header{
+		background: url("../img/junglebook.jpg") no-repeat center top / cover;
+		height: 300px;
+	}
+	
+	header .navigation{
+		margin-top: 340px;
+	}
+	
+	header .logo{
+		display: block;
+		width: 18px;
+		padding-top: 20px;
+	}
+
+
+	.container{
+		width: 320px;
+		padding-left: 10px;
+		padding-right: 10px;
+		box-sizing: border-box;
+	}
+
+	.top_ul{
+		display: none;
+	}
+
+
+
+	
+	#burger_menu{
+		display: block;
+		position: fixed;
+		width: 200px;
+		height: 100%;
+		background: #131414;
+		border-right: 4px solid #E0E5EA;
+		right: -200px;
+		top: 1%;
+		-moz-transition: all 300ms;
+		-webkit-transition: all 300ms;
+		transition: all 300ms;
+
+    }
+
+
+	#burger_menu ul li:first-child{
+		text-align: center;
+		color: white;
+		font-size: 1.75em;
+		list-style: none;
+		padding: 7px 5px 5px 5px;
+	}
+
+
+	#burger_menu ul li:not(:first-child){
+		width: 90px;
+		margin-left: 10%;
+		color: white;
+		font-size: 1.0em;
+		list-style: none;
+		padding: 10px 10px;
+	}
+
+	#burger_menu ul li a{
+		color: #39676894;
+		text-decoration: none;
+	}
+
+
+
+
+
+	
+
+	section .trending_ul li{
+		padding: 4px;
+		margin-right: 6px;
+		font-size: 9px;
+	}
+	section .trending_ul li:first-child{
+		color: #129ac7;
+		border-bottom: 2px solid #0aaee4;
+	}
+
+	section .trending_ul li a{
+		font-size: 8px;
+	}
+
+	.card{
+		width: 130px;
+		height: 180px;
+		margin-bottom: 10px;
+		background: #ffffff;
+	}
+
+
+		
+	.movies{
+		box-sizing: inherit;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 10px;
+	}
+
+	.movie img{
+	 	width: 130px;
+		height: 100px;
+		
+	}
+	.last_movie{
+		display: block;
+	}
+	
+	.loading{
+		display: none;
+	}
+}
+
+
+
+
+
+@media (max-width: 300px){
+	
+	header{
+		background: url("../img/junglebook.jpg") no-repeat center top / cover;
+		height: 400px;
+	}
+	
+	header .navigation{
+		margin-top: 235px;
+		height: 200px;
+	}
+	
+	header .logo{
+		display: block;
+		width: 18px;
+		padding-top: 20px;
+	}
+
+
+	.container{
+		width: 300px;
+		padding-left: 10px;
+		padding-right: 10px;
+		box-sizing: border-box;
+	}
+
+	.top_ul{
+		display: none;
+	}
+
+
+	.spans{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		position: absolute;
+		right: 5%;
+		top: 5%;
+	}
+	
+
+	section .trending_ul li{
+		padding: 4px;
+		margin-right: 6px;
+		font-size: 9px;
+	}
+	section .trending_ul li:first-child{
+		color: #129ac7;
+		border-bottom: 2px solid #0aaee4;
+	}		
+
+	.navigation .name_sliders{
+		font-size: 20px;
+
+	}
+
+
+	.movies{
+		box-sizing: inherit;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 6px;
+	}
+
+
+
+
+	.card{
+		width: 100px;
+		height: 180px;
+		margin-bottom: 10px;
+		background: #ffffff;
+	}
+	
+	.movie img{
+		width: 125px;
+		height: 120px;
+		
+	}
+	
+	.movie .movie_title{
+		margin-left: 0px;
+		padding-left: 0px;
+	}
+
+	.navigation ul{
+		margin-left: 0; 
+	}
+
+	section .trending_ul li{
+		font-size: 6px;
+	}
+
+
+	section .trending_ul{
+		margin: 0;
+	}
+
+
+	.movie .movie_title,
+	.catigories_movie
+	{
+		font-size: 9px;
+	}
+
+	.movie p {
+		margin-left: 0;
+	}
+	
+	.last_movie{
+		display: block;
+	}
+
+
+	.reseiv_information p{
+		font-size: 8px;
+		color: #ffffff;
+		font-weight: 400;
+	}
+
+	.reseiv_information a{
+		text-transform: uppercase;
+		border: 2px solid #3bb4e0;
+		background: #3bb4e0;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-right: 10px;
+		padding-left: 10px;
+		border-radius: 3px;
+		transition: 0.6s;
+		font-size: 12px
+	}
+
+
+
+	
+	footer{
+		border-top: 1px solid #cacbcc;
+	}
+
+	footer .wrap{
+		display: block;
+		padding-top: 70px;
+		padding-bottom: 100px;
+		padding-left: 0px;
+	}
+	
+	footer .footer_loga{
+		padding-left: 55px;
+	}
+
+	footer .wrap ul{
+		display: flex;
+	}
+	footer .wrap ul li{
+		margin: 0;
+		margin-right: 10px;
+		
+	}
+
+	footer .wrap ul li a{
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 10px;
+		color: #cacbcc;
+		transition: 0.5s;
+	}
+
+	footer .wrap ul li a:hover{
+		color: #6B6B6B;
+	}
+
+	footer .social_networks{
+		display: flex;
+		justify-content: flex-start;
+		margin-top: 10px;
+	}
+
+	footer .social_networks i{
+		font-size: 15px;
+		margin-right: 20px;
+		transition: 0.5s;
+	}
+
+	footer .social_networks i:first-child{
+		margin-left: 40px;
+	}
+
+	footer .social_networks i:hover{
+		color: red;
+	}
+
+	footer .note{
+		text-transform: uppercase;
+		text-align: center;
+		color: #989898;
+		font-size: 10px;
+	}
+
+
+}
+
+
+
+
+
+
+@media (max-width: 280px){
+	
+	header{
+		background: url("../img/junglebook.jpg") no-repeat center top / cover;
+		height: 400px;
+	}
+	
+	header .navigation{
+		margin-top: 235px;
+		height: 200px;
+	}
+	
+	header .logo{
+		display: block;
+		width: 18px;
+		padding-top: 20px;
+	}
+
+
+	.container{
+		width: 280px;
+		padding-left: 10px;
+		padding-right: 10px;
+		box-sizing: border-box;
+	}
+
+	.top_ul{
+		display: none;
+	}
+
+
+	.spans{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		position: absolute;
+		right: 5%;
+		top: 5%;
+	}
+	
+
+	section .trending_ul li{
+		padding: 4px;
+		margin-right: 6px;
+		font-size: 9px;
+	}
+	section .trending_ul li:first-child{
+		color: #129ac7;
+		border-bottom: 2px solid #0aaee4;
+	}		
+
+	.navigation .name_sliders{
+		font-size: 20px;
+
+	}
+
+
+	.movies{
+		box-sizing: inherit;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 6px;
+	}
+
+
+
+
+	.card{
+		width: 100px;
+		height: 180px;
+		margin-bottom: 10px;
+		background: #ffffff;
+	}
+	
+	.movie img{
+		width: 125px;
+		height: 120px;
+		
+	}
+	
+	.movie .movie_title{
+		margin-left: 0px;
+		padding-left: 0px;
+	}
+
+	.navigation ul{
+		margin-left: 0; 
+	}
+
+	section .trending_ul li{
+		font-size: 6px;
+	}
+
+
+	section .trending_ul{
+		margin: 0;
+	}
+
+
+	.movie .movie_title,
+	.catigories_movie
+	{
+		font-size: 9px;
+	}
+
+	.movie p {
+		margin-left: 0;
+	}
+	
+	.last_movie{
+		display: block;
+	}
+
+
+	.subscribe{
+		box-sizing: border-box;
+		width: 100%;
+		height: 200px;
+		background: url("../img/Footer-bg-copy.jpg") center ;
+		margin-bottom: 30px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+	}
+
+
+	.reseiv_information p{
+		font-size: 10px;
+		color: #ffffff;
+		font-weight: 400;
+	}
+
+	.reseiv_information a{
+		text-transform: uppercase;
+		border: 2px solid #3bb4e0;
+		background: #3bb4e0;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-right: 10px;
+		padding-left: 10px;
+		border-radius: 3px;
+		transition: 0.6s;
+		font-size: 12px
+	}
+
+
+
+	
+	footer{
+		border-top: 1px solid #cacbcc;
+	}
+
+	footer .wrap{
+		display: block;
+		padding-top: 70px;
+		padding-bottom: 100px;
+		padding-left: 0px;
+	}
+	
+	footer .footer_loga{
+		padding-left: 55px;
+	}
+
+	footer .wrap ul{
+		display: flex;
+	}
+	footer .wrap ul li{
+		margin: 0;
+		margin-right: 10px;
+		
+	}
+
+	footer .wrap ul li a{
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 10px;
+		color: #cacbcc;
+		transition: 0.5s;
+	}
+
+	footer .wrap ul li a:hover{
+		color: #6B6B6B;
+	}
+
+	footer .social_networks{
+		display: flex;
+		justify-content: flex-start;
+		margin-top: 10px;
+	}
+
+	footer .social_networks i{
+		font-size: 15px;
+		margin-right: 20px;
+		transition: 0.5s;
+	}
+
+	footer .social_networks i:first-child{
+		margin-left: 40px;
+	}
+
+	footer .social_networks i:hover{
+		color: red;
+	}
+
+	footer .note{
+		text-transform: uppercase;
+		text-align: center;
+		color: #989898;
+		font-size: 10px;
+	}
+
+
+}
